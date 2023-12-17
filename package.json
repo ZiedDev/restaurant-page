@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "a simple restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiedDev/restaurant-page.git"
+  },
+  "keywords": [
+    "restaurant",
+    "food"
+  ],
+  "author": "Zied",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiedDev/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/ZiedDev/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
