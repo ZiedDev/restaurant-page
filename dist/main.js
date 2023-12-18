@@ -1,1 +1,0 @@
-(()=>{function t(t,e,n,d){const o=document.createElement(t||"div");return""!=e&&o.classList.add(e),""!=n&&(o.id=n),o.textContent=d,o}document.body.appendChild(t("div","content","content","")),document.getElementById("content").appendChild(t("h1","title","title","Hello World!"))})();

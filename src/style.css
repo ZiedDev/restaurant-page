@@ -1,0 +1,116 @@
+:root[data-theme="light"] {
+    --text: rgb(37, 23, 14);
+    --background: rgb(252, 246, 243);
+    --primary: rgb(251, 143, 80);
+    --secondary: rgb(235, 160, 117);
+    --accent: rgb(208, 87, 17);
+}
+
+:root[data-theme="dark"] {
+    --text: rgb(241, 227, 218);
+    --background: rgb(12, 6, 3);
+    --primary: rgb(175, 66, 4);
+    --secondary: rgb(138, 68, 28);
+    --accent: rgb(238, 117, 47);
+}
+
+
+@font-face {
+    font-family: 'BiteChalk';
+    src: url('./fonts/BiteChalk/BiteChalk.ttf');
+}
+
+@font-face {
+    font-family: 'BiteChalk Bold';
+    src: url('./fonts/BiteChalk/BiteChalkBold.ttf');
+}
+
+@font-face {
+    font-family: 'BiteChalk Normal';
+    src: url('./fonts/BiteChalk/BiteChalkNormal.ttf');
+}
+
+@font-face {
+    font-family: 'BiteChalk Slim';
+    src: url('./fonts/BiteChalk/BiteChalkSlim.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+body * {
+    font-family: 'BiteChalk Slim', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+.nav-button>h1 {
+    user-select: none;
+    padding: 0;
+    letter-spacing: 1.5pt;
+    font-size: 20pt;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    transition: background-color 100ms ease-in-out;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: rgb(from var(--accent) r g b / 30%);
+}
+
+.nav-button:hover>h1 {
+    transform: scale(115%);
+}
+
+.nav-theme-button-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-button {
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.theme-button:hover {
+    cursor: pointer;
+    background-color: rgb(from var(--accent) r g b / 30%);
+}
+
+.theme-button>svg {
+    width: 50%;
+    height: 50%;
+}
+
+.hide {
+    display: none;
+}
