@@ -30,6 +30,4 @@ function switchTheme(e) {
     }
 }
 
-document.getElementById('theme-button').addEventListener("change", switchTheme);
-
-// navThemeButton
+navThemeButton.addEventListener("change", switchTheme);

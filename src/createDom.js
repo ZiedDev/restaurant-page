@@ -23,10 +23,9 @@ navContactButton.appendChild(createElement('h1', 'nav-contact', 'nav-contact', '
 navBar.appendChild(createElement('', 'nav-theme-button-container', 'nav-theme-button-container'));
 const navThemeButtonContainer = getById('nav-theme-button-container');
 
+navThemeButtonContainer.innerHTML += sunSvg + moonSvg;
 navThemeButtonContainer.appendChild(createInput('checkbox', 'theme-button', 'theme-button'));
 const navThemeButton = getById('theme-button');
-
-navThemeButtonContainer.innerHTML += sunSvg + moonSvg;
 
 const sunThemeButton = getById('sun-theme-button');
 const moonThemeButton = getById('moon-theme-button');
