@@ -1,0 +1,66 @@
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+.nav-button>h1 {
+    user-select: none;
+    padding: 0;
+    letter-spacing: 1.5pt;
+    font-size: 20pt;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    transition: background-color 100ms ease-in-out;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: rgb(from var(--accent) r g b / 30%);
+}
+
+.nav-button:hover>h1 {
+    transform: scale(115%);
+}
+
+.nav-theme-button-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-button {
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.theme-button:hover {
+    cursor: pointer;
+    background-color: rgb(from var(--accent) r g b / 30%);
+}
+
+.theme-button>svg {
+    width: 50%;
+    height: 50%;
+}
