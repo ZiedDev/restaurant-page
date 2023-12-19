@@ -5,8 +5,9 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     entry: [
-        './src/index.js',
         './src/createDom.js',
+        './src/domElements.js',
+        './src/index.js',
         './src/theme.js'
     ],
     output: {
@@ -18,6 +19,10 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ],
     },

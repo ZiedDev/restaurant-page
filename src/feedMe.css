@@ -1,0 +1,180 @@
+.feedMe-content {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+        "a a b"
+        "c d b"
+        "e f b";
+
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    gap: 1rem;
+}
+
+.about-restaurant {
+    grid-area: a;
+}
+
+.top-dish {
+    grid-area: b;
+    cursor: pointer;
+}
+
+.address {
+    grid-area: c;
+}
+
+.working-time {
+    grid-area: d;
+}
+
+.dishes {
+    grid-area: e;
+    cursor: pointer;
+}
+
+.social-media {
+    grid-area: f;
+}
+
+.about-restaurant,
+.top-dish,
+.address,
+.working-time,
+.dishes,
+.social-media {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    background-color: rgb(from var(--secondary) r g b / 37%);
+    overflow: hidden;
+}
+
+.about-restaurant *,
+.top-dish *,
+.address *,
+.working-time *,
+.dishes *,
+.social-media * {
+    color: var(--text-white);
+}
+
+.about-restaurant img,
+.top-dish img,
+.address img,
+.working-time img,
+.dishes img,
+.social-media img {
+    position: absolute;
+    object-position: 40% 25%;
+    transition: width 100ms ease-out, scale 100ms ease-out;
+}
+
+.top-dish img:hover {
+    scale: 1.025;
+}
+
+.dishes-image-1:hover,
+.dishes-image-2:hover,
+.dishes-image-3:hover {
+    width: 105%;
+}
+
+.about-restaurant::after,
+.top-dish::after,
+.address::after,
+.working-time::after,
+.dishes::after,
+.social-media::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+.about-restaurant h2,
+.top-dish h2,
+.address h2,
+.working-time h2,
+.dishes h2,
+.social-media h2 {
+    position: absolute;
+    z-index: 11;
+    letter-spacing: 1.5pt;
+    word-spacing: 1pt;
+    user-select: none;
+}
+
+.address h2 {
+    letter-spacing: 1.5pt;
+    word-spacing: 2pt;
+}
+
+.about-restaurant h2 {
+    font-size: clamp(24pt, 16pt, 12pt);
+}
+
+.dishes h2,
+.top-dish h2 {
+    font-family: 'BiteChalk Normal';
+    font-size: clamp(50pt, 24pt, 12pt);
+    bottom: 10%;
+    left: 10%;
+    letter-spacing: 2.5pt;
+    word-spacing: 2pt;
+}
+
+#dishes-image-1 {
+    object-position: 50% 50%;
+    transition: transform 700ms ease-in-out, width 100ms ease-out;
+}
+
+#dishes-image-2 {
+    object-position: 0% 65%;
+    translate: 100% 0;
+    transition: transform 700ms ease-in-out, width 100ms ease-out;
+}
+
+#dishes-image-3 {
+    object-position: 0% 75%;
+    translate: 200% 0;
+    transition: transform 700ms ease-in-out, width 100ms ease-out;
+}
+
+/**/
+.dishes-image-1-slide-1 {
+    transform: translateX(-100%);
+}
+
+.dishes-image-2-slide-1 {
+    transform: translateX(-100%);
+}
+
+
+.dishes-image-3-slide-1 {
+    transform: translateX(-100%);
+}
+
+/**/
+.dishes-image-1-slide-2 {
+    transform: translateX(-200%);
+}
+
+.dishes-image-2-slide-2 {
+    transform: translateX(-200%);
+}
+
+.dishes-image-3-slide-2 {
+    transform: translateX(-200%);
+}

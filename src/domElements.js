@@ -1,3 +1,4 @@
+import { lol } from './createDom.js';
 import { getById } from './templates.js';
 
 const body = document.body;
@@ -21,6 +22,17 @@ const moonThemeButton = getById('moon-theme-button');
 const main = getById('main');
 const mainContent = getById('main-content');
 
+// FeedMe content
+const aboutRestaurant = getById('about-restaurant');
+const topDish = getById('top-dish');
+const address = getById('address');
+const workingTime = getById('working-time');
+const dishes = getById('dishes');
+const socialMedia = getById('social-media');
+const dishesImage1 = getById('dishes-image-1');
+const dishesImage2 = getById('dishes-image-2');
+const dishesImage3 = getById('dishes-image-3');
+
 export {
     body,
     navBar,
@@ -34,5 +46,14 @@ export {
     sunThemeButton,
     moonThemeButton,
     main,
-    mainContent
+    mainContent,
+    aboutRestaurant,
+    topDish,
+    address,
+    workingTime,
+    dishes,
+    socialMedia,
+    dishesImage1,
+    dishesImage2,
+    dishesImage3
 }

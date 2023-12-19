@@ -18,8 +18,17 @@ function createInput(type, className, id) {
     return element;
 }
 
+function createImage(className, id, src) {
+    const element = createElement('img', className, id);
+
+    element.src = src;
+
+    return element;
+}
+
+
 function getById(id) {
     return document.getElementById(id);
 }
 
-export { createElement, getById, createInput };
+export { createElement, getById, createInput, createImage };

@@ -1,3 +1,16 @@
+:root {
+    --text-white: rgb(241, 227, 218);
+    --text-black: rgb(37, 23, 14);
+    --background-black: rgb(12, 6, 3);
+    --background-white: rgb(252, 246, 243);
+    --primary-black: rgb(175, 66, 4);
+    --primary-white: rgb(251, 143, 80);
+    --secondary-black: rgb(138, 68, 28);
+    --secondary-white: rgb(235, 160, 117);
+    --accent-black: rgb(238, 117, 47);
+    --accent-white: rgb(208, 87, 17);
+}
+
 :root[data-theme="light"] {
     --text: rgb(37, 23, 14);
     --background: rgb(252, 246, 243);
@@ -64,18 +77,26 @@ main {
     position: relative;
 }
 
-.main-transition {
-    position: absolute;
-    top: -10%;
-    bottom: -10%;
-    right: 0;
-    left: 0;
-    background-color: var(--secondary);
-    transform: translateY(-100%);
-    transition: transform 1500ms ease-in-out;
-    z-index: 1;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.main-transition-active {
-    transform: translateY(100%);
+.main-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-content>img {
+    position: absolute;
+    object-position: 25% 75%;
+    z-index: -1;
+    filter: brightness(0.5);
 }
