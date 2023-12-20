@@ -1,4 +1,4 @@
-import { lol } from './createDom.js';
+import './createDom.js';
 import { getById } from './templates.js';
 
 const body = document.body;
@@ -21,6 +21,9 @@ const moonThemeButton = getById('moon-theme-button');
 // Main content
 const main = getById('main');
 const mainContent = getById('main-content');
+const feedMeContent = getById('feedMe-content');
+const menuContent = getById('menu-content');
+const contactContent = getById('contact-content');
 
 // FeedMe content
 const aboutRestaurant = getById('about-restaurant');
@@ -55,5 +58,8 @@ export {
     socialMedia,
     dishesImage1,
     dishesImage2,
-    dishesImage3
+    dishesImage3,
+    feedMeContent,
+    menuContent,
+    contactContent
 }

@@ -1,6 +1,5 @@
 import { createElement, createInput, createImage, getById } from './templates.js';
-import { sunSvg, moonSvg, background, steak, sushi, rice } from './media.js';
-import { slideShow } from "./slideShow.js";
+import { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg } from './media.js';
 import './style.css';
 import './navBar.css';
 import './feedMe.css';
@@ -34,6 +33,8 @@ getById('main-content').appendChild(createImage('', '', background));
 getById('main-content').appendChild(createElement('', 'feedMe-content', 'feedMe-content'));
 getById('main-content').appendChild(createElement('', 'menu-content', 'menu-content'));
 getById('main-content').appendChild(createElement('', 'contact-content', 'contact-content'));
+getById('menu-content').classList.add('hide');
+getById('contact-content').classList.add('hide');
 
 // FeedMe content
 getById('feedMe-content').appendChild(createElement('', 'about-restaurant', 'about-restaurant'));
@@ -48,7 +49,7 @@ getById('about-restaurant').appendChild(createElement('h2', '', '', 'about resta
 getById('top-dish').appendChild(createImage('', '', steak));
 getById('top-dish').appendChild(createElement('h2', '', '', 'Top Dish'));
 
-getById('address').appendChild(createElement('h2', '', '', 'Location: '));
+getById('address').appendChild(createElement('h2', '', '', 'Location: 862 Forest Avenue, Elmsford, New York'));
 
 getById('working-time').appendChild(createElement('h2', '', '', '7:00 AM → 10:00 PM'));
 
@@ -56,21 +57,17 @@ getById('dishes').appendChild(createElement('h2', '', '', 'dishes'));
 getById('dishes').appendChild(createImage('dishes-image-1', 'dishes-image-1', steak));
 getById('dishes').appendChild(createImage('dishes-image-2', 'dishes-image-2', sushi)); getById('dishes').appendChild(createImage('dishes-image-3', 'dishes-image-3', rice));
 
-getById('social-media').appendChild(createElement('h2', '', '', 'social-media'));
+getById('social-media').appendChild(createElement('', 'social-media-icon-container', 'x-social-media-container'));
 
-// Will move to another script 
-getById('nav-title-button').addEventListener('click', function () {
-    alert('FeedMe');
-});
-getById('nav-menu-button').addEventListener('click', function () {
-    alert('Menu');
-});
-getById('nav-contact-button').addEventListener('click', function () {
-    alert('Contact');
-});
+getById('x-social-media-container').innerHTML += xLogoSvg;
+getById('x-social-media-container').appendChild(createElement('h2', '', '', '@FeedMe'));
 
-function lol() {
-    console.log('lol');
-}
+getById('social-media').appendChild(createElement('', 'social-media-icon-container', 'instagram-social-media-container'));
 
-export { lol }
+getById('instagram-social-media-container').innerHTML += instagramLogoSvg;
+getById('instagram-social-media-container').appendChild(createElement('h2', '', '', '@FeedMe'));
+
+getById('social-media').appendChild(createElement('', 'social-media-icon-container', 'email-social-media-container'));
+
+getById('email-social-media-container').innerHTML += emailSvg;
+getById('email-social-media-container').appendChild(createElement('h2', '', '', 'FeedMe@FeedMe.com'));

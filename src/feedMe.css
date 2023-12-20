@@ -34,16 +34,11 @@
     cursor: pointer;
 }
 
-.social-media {
-    grid-area: f;
-}
-
 .about-restaurant,
 .top-dish,
 .address,
 .working-time,
-.dishes,
-.social-media {
+.dishes {
     position: relative;
 
     display: flex;
@@ -53,6 +48,41 @@
     border-radius: 1rem;
     background-color: rgb(from var(--secondary) r g b / 37%);
     overflow: hidden;
+}
+
+.social-media {
+    overflow: hidden;
+    grid-area: f;
+
+    position: relative;
+    border-radius: 1rem;
+    background-color: rgb(from var(--secondary) r g b / 37%);
+
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.social-media-icon-container {
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+
+.social-media-icon-container>h2 {
+    transition: transform 100ms ease-in-out;
+}
+
+.social-media-icon-container:hover {
+    cursor: pointer;
+    background-color: rgb(from var(--accent) r g b / 30%);
+}
+
+.social-media-icon-container:hover>h2 {
+    transform: scale(107%);
 }
 
 .about-restaurant *,
@@ -68,20 +98,19 @@
 .top-dish img,
 .address img,
 .working-time img,
-.dishes img,
-.social-media img {
+.dishes img {
     position: absolute;
     object-position: 40% 25%;
     transition: width 100ms ease-out, scale 100ms ease-out;
 }
 
-.top-dish img:hover {
+.top-dish:hover img {
     scale: 1.025;
 }
 
-.dishes-image-1:hover,
-.dishes-image-2:hover,
-.dishes-image-3:hover {
+.dishes:hover .dishes-image-1,
+.dishes:hover .dishes-image-2,
+.dishes:hover .dishes-image-3 {
     width: 105%;
 }
 
@@ -107,11 +136,18 @@
 .top-dish h2,
 .address h2,
 .working-time h2,
-.dishes h2,
-.social-media h2 {
+.dishes h2 {
     position: absolute;
     z-index: 11;
     letter-spacing: 1.5pt;
+    word-spacing: 1pt;
+    user-select: none;
+}
+
+.social-media h2,
+.social-media svg {
+    z-index: 11;
+    letter-spacing: 2pt;
     word-spacing: 1pt;
     user-select: none;
 }
@@ -161,7 +197,6 @@
     transform: translateX(-100%);
 }
 
-
 .dishes-image-3-slide-1 {
     transform: translateX(-100%);
 }
@@ -177,4 +212,20 @@
 
 .dishes-image-3-slide-2 {
     transform: translateX(-200%);
+}
+
+@media only screen and (max-width:768px) {
+    .feedMe-content {
+        padding: 0rem 0 5rem 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "c"
+            "d"
+            "e"
+            "f";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem repeat(5, 7rem);
+    }
 }

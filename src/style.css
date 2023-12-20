@@ -63,7 +63,7 @@ body * {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 nav {
@@ -92,10 +92,11 @@ img {
     justify-items: center;
     align-items: center;
     position: relative;
+    overflow-y: auto;
 }
 
 .main-content>img {
-    position: absolute;
+    position: fixed;
     object-position: 25% 75%;
     z-index: -1;
     filter: brightness(0.5);
