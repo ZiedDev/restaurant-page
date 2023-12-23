@@ -30,22 +30,22 @@
 
 @font-face {
     font-family: 'BiteChalk';
-    src: url('./fonts/BiteChalk/BiteChalk.ttf');
+    src: url('../media/fonts/BiteChalk/BiteChalk.ttf');
 }
 
 @font-face {
     font-family: 'BiteChalk Bold';
-    src: url('./fonts/BiteChalk/BiteChalkBold.ttf');
+    src: url('../media/fonts/BiteChalk/BiteChalkBold.ttf');
 }
 
 @font-face {
     font-family: 'BiteChalk Normal';
-    src: url('./fonts/BiteChalk/BiteChalkNormal.ttf');
+    src: url('../media/fonts/BiteChalk/BiteChalkNormal.ttf');
 }
 
 @font-face {
     font-family: 'BiteChalk Slim';
-    src: url('./fonts/BiteChalk/BiteChalkSlim.ttf');
+    src: url('../media/fonts/BiteChalk/BiteChalkSlim.ttf');
 }
 
 body {

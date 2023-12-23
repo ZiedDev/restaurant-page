@@ -1,7 +1,7 @@
-import backgroundImage from './media/images/Background.jpg';
-import steakImage from './media/images/steak.jpg';
-import SushiImage from './media/images/Sushi.jpg';
-import RiceImage from './media/images/Rice.jpg';
+import backgroundImage from '../media/images/Background.jpg';
+import steakImage from '../media/images/steak.jpg';
+import SushiImage from '../media/images/Sushi.jpg';
+import RiceImage from '../media/images/Rice.jpg';
 
 const sunSvg = /*html*/ '<svg xmlns="http://www.w3.org/2000/svg" class="sun-theme-button" id="sun-theme-button" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q-2.075 0-3.537-1.463T7 12q0-2.075 1.463-3.537T12 7q2.075 0 3.538 1.463T17 12q0 2.075-1.463 3.538T12 17m-7-4H1v-2h4zm18 0h-4v-2h4zM11 5V1h2v4zm0 18v-4h2v4zM6.4 7.75L3.875 5.325L5.3 3.85l2.4 2.5zm12.3 12.4l-2.425-2.525L17.6 16.25l2.525 2.425zM16.25 6.4l2.425-2.525L20.15 5.3l-2.5 2.4zM3.85 18.7l2.525-2.425L7.75 17.6l-2.425 2.525z"/></svg>'
 
@@ -19,4 +19,6 @@ const steak = steakImage;
 const sushi = SushiImage;
 const rice = RiceImage;
 
-export { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg }
+const arrow = /*html*/`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887z"/></svg>`
+
+export { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg, arrow }

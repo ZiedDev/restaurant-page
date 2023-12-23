@@ -1,5 +1,5 @@
-import './createDom.js';
 import { getById } from './templates.js';
+import './createDom.js';
 
 const body = document.body;
 
@@ -36,6 +36,13 @@ const dishesImage1 = getById('dishes-image-1');
 const dishesImage2 = getById('dishes-image-2');
 const dishesImage3 = getById('dishes-image-3');
 
+const menuItem1 = getById('menu-item-1');
+const menuItem2 = getById('menu-item-2');
+const menuItem3 = getById('menu-item-3');
+
+const menuSlideLeftButton = getById('menu-slide-left-button');
+const menuSlideRightButton = getById('menu-slide-right-button');
+
 export {
     body,
     navBar,
@@ -61,5 +68,10 @@ export {
     dishesImage3,
     feedMeContent,
     menuContent,
-    contactContent
+    contactContent,
+    menuSlideLeftButton,
+    menuSlideRightButton,
+    menuItem1,
+    menuItem2,
+    menuItem3
 }

@@ -5,10 +5,10 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     entry: [
-        './src/index.js',
-        './src/domElements.js',
-        './src/theme.js',
-        './src/createDom.js',
+        './src/js/index.js',
+        './src/js/domElements.js',
+        './src/js/theme.js',
+        './src/js/createDom.js',
     ],
     output: {
         filename: 'bundle.js',

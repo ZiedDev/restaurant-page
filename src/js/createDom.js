@@ -1,15 +1,16 @@
 import { createElement, createInput, createImage, getById } from './templates.js';
-import { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg } from './media.js';
-import './style.css';
-import './navBar.css';
-import './feedMe.css';
+import { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg, arrow } from './media.js';
+import '../css/style.css';
+import '../css/navBar.css';
+import '../css/feedMe.css';
+import '../css/menu.css';
 
 // Navigation Bar
 document.body.appendChild(createElement('nav', 'navBar', 'navBar'));
 
-getById('navBar').appendChild(createElement('', 'nav-button', 'nav-title-button'));
-
 getById('navBar').appendChild(createElement('', 'nav-button', 'nav-menu-button'));
+
+getById('navBar').appendChild(createElement('', 'nav-button', 'nav-title-button'));
 
 getById('navBar').appendChild(createElement('', 'nav-button', 'nav-contact-button'));
 
@@ -30,9 +31,10 @@ document.body.appendChild(createElement('main', 'main', 'main'));
 getById('main').appendChild(createElement('', 'main-content', 'main-content'));
 getById('main-content').appendChild(createImage('', '', background));
 
-getById('main-content').appendChild(createElement('', 'feedMe-content', 'feedMe-content'));
 getById('main-content').appendChild(createElement('', 'menu-content', 'menu-content'));
+getById('main-content').appendChild(createElement('', 'feedMe-content', 'feedMe-content'));
 getById('main-content').appendChild(createElement('', 'contact-content', 'contact-content'));
+
 getById('menu-content').classList.add('hide');
 getById('contact-content').classList.add('hide');
 
@@ -71,3 +73,39 @@ getById('social-media').appendChild(createElement('', 'social-media-icon-contain
 
 getById('email-social-media-container').innerHTML += emailSvg;
 getById('email-social-media-container').appendChild(createElement('h2', '', '', 'FeedMe@FeedMe.com'));
+
+// Menu content
+getById('menu-content').appendChild(createElement('', 'menu-slide-left-button', 'menu-slide-left-button'));
+
+getById('menu-content').appendChild(createElement('', 'menu-items', 'menu-items'));
+
+
+getById('menu-content').appendChild(createElement('', 'menu-slide-right-button', 'menu-slide-right-button'));
+
+getById('menu-slide-left-button').innerHTML += arrow;
+getById('menu-slide-right-button').innerHTML += arrow;
+
+
+getById('menu-items').appendChild(createElement('', 'menu-item', 'menu-item-1'));
+
+getById('menu-items').appendChild(createElement('', 'menu-item', 'menu-item-2'));
+
+getById('menu-items').appendChild(createElement('', 'menu-item', 'menu-item-3'));
+
+// Menu Item 1
+getById('menu-item-1').appendChild(createElement('', 'menu-image-container', 'menu-image-1-container'));
+getById('menu-image-1-container').appendChild(createImage('', '', steak));
+getById('menu-image-1-container').appendChild(createElement('h2', '', '', 'Steak'));
+getById('menu-item-1').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
+
+// Menu Item 2
+getById('menu-item-2').appendChild(createElement('', 'menu-image-container', 'menu-image-2-container'));
+getById('menu-image-2-container').appendChild(createImage('', '', sushi));
+getById('menu-image-2-container').appendChild(createElement('h2', '', '', 'Sushi'));
+getById('menu-item-2').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
+
+// Menu Item 3
+getById('menu-item-3').appendChild(createElement('', 'menu-image-container', 'menu-image-3-container'));
+getById('menu-image-3-container').appendChild(createImage('', '', rice));
+getById('menu-image-3-container').appendChild(createElement('h2', '', '', 'Rice'));
+getById('menu-item-3').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
