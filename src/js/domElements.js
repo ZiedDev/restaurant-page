@@ -43,6 +43,10 @@ const menuItem3 = getById('menu-item-3');
 const menuSlideLeftButton = getById('menu-slide-left-button');
 const menuSlideRightButton = getById('menu-slide-right-button');
 
+const menuItemDescription1 = getById('menu-item-description-1');
+const menuItemDescription2 = getById('menu-item-description-2');
+const menuItemDescription3 = getById('menu-item-description-3');
+
 export {
     body,
     navBar,
@@ -73,5 +77,8 @@ export {
     menuSlideRightButton,
     menuItem1,
     menuItem2,
-    menuItem3
+    menuItem3,
+    menuItemDescription1,
+    menuItemDescription2,
+    menuItemDescription3
 }

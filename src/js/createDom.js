@@ -35,7 +35,7 @@ getById('main-content').appendChild(createElement('', 'menu-content', 'menu-cont
 getById('main-content').appendChild(createElement('', 'feedMe-content', 'feedMe-content'));
 getById('main-content').appendChild(createElement('', 'contact-content', 'contact-content'));
 
-getById('feedMe-content').classList.add('hide');
+getById('menu-content').classList.add('hide');
 getById('contact-content').classList.add('hide');
 
 // FeedMe content
@@ -96,16 +96,28 @@ getById('menu-items').appendChild(createElement('', 'menu-item', 'menu-item-3'))
 getById('menu-item-1').appendChild(createElement('', 'menu-image-container', 'menu-image-1-container'));
 getById('menu-image-1-container').appendChild(createImage('', '', steak));
 getById('menu-image-1-container').appendChild(createElement('h2', '', '', 'Steak'));
-getById('menu-item-1').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
+getById('menu-item-1').appendChild(createElement('', 'menu-item-description', 'menu-item-description-1'));
+
+getById('menu-item-description-1').appendChild(createElement('h2', 'menu-description-text', 'menu-description-text-1'));
+
+getById('menu-description-text-1').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'
 
 // Menu Item 2
 getById('menu-item-2').appendChild(createElement('', 'menu-image-container', 'menu-image-2-container'));
 getById('menu-image-2-container').appendChild(createImage('', '', sushi));
 getById('menu-image-2-container').appendChild(createElement('h2', '', '', 'Sushi'));
-getById('menu-item-2').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
+getById('menu-item-2').appendChild(createElement('', 'menu-item-description', 'menu-item-description-2'));
+
+getById('menu-item-description-2').appendChild(createElement('h2', 'menu-description-text', 'menu-description-text-2'));
+
+getById('menu-description-text-2').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'
 
 // Menu Item 3
 getById('menu-item-3').appendChild(createElement('', 'menu-image-container', 'menu-image-3-container'));
 getById('menu-image-3-container').appendChild(createImage('', '', rice));
 getById('menu-image-3-container').appendChild(createElement('h2', '', '', 'Rice'));
-getById('menu-item-3').appendChild(createElement('', 'menu-item-description', 'menu-item-description'));
+getById('menu-item-3').appendChild(createElement('', 'menu-item-description', 'menu-item-description-3'));
+
+getById('menu-item-description-3').appendChild(createElement('h2', 'menu-description-text', 'menu-description-text-3'));
+
+getById('menu-description-text-3').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'

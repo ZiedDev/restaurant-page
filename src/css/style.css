@@ -93,6 +93,9 @@ img {
     align-items: center;
     position: relative;
     overflow-y: auto;
+
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .main-content>img {
