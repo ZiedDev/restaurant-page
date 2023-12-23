@@ -151,3 +151,22 @@
 .menu-item-3-slide-2 {
     transform: translateX(-200%);
 }
+
+@media only screen and (max-width:768px) {
+    .menu-content {
+        grid-template-columns: 2rem auto 2rem;
+    }
+
+    .menu-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .menu-item-description {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .menu-image-container {
+        border-radius: 1rem 1rem 0 0;
+    }
+}

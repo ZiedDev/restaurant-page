@@ -35,7 +35,7 @@ getById('main-content').appendChild(createElement('', 'menu-content', 'menu-cont
 getById('main-content').appendChild(createElement('', 'feedMe-content', 'feedMe-content'));
 getById('main-content').appendChild(createElement('', 'contact-content', 'contact-content'));
 
-getById('menu-content').classList.add('hide');
+getById('feedMe-content').classList.add('hide');
 getById('contact-content').classList.add('hide');
 
 // FeedMe content
