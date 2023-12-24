@@ -121,3 +121,8 @@ getById('menu-item-3').appendChild(createElement('', 'menu-item-description', 'm
 getById('menu-item-description-3').appendChild(createElement('h2', 'menu-description-text', 'menu-description-text-3'));
 
 getById('menu-description-text-3').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'
+
+// Contact menu
+getById('contact-menu').appendChild(createElement('h2', 'contact-1', 'contact-1', 'contact-1'));
+getById('contact-menu').appendChild(createElement('h2', 'contact-2', 'contant-2', 'contact-2'));
+getById('contact-menu').appendChild(createElement('h2', 'contact-3', 'contact-3', 'contact-3'));
