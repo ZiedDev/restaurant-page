@@ -18,6 +18,8 @@ getById('nav-title-button').appendChild(createElement('h1', 'nav-title', 'nav-ti
 getById('nav-menu-button').appendChild(createElement('h1', 'nav-menu', 'nav-menu', 'Menu'));
 getById('nav-contact-button').appendChild(createElement('h1', 'nav-contact', 'nav-contact', 'Contact'));
 
+getById('nav-title-button').classList.add('nav-button-active');
+
 getById('navBar').appendChild(createElement('', 'nav-theme-button-container', 'nav-theme-button-container'));
 
 getById('nav-theme-button-container').innerHTML += sunSvg + moonSvg;
@@ -123,6 +125,6 @@ getById('menu-item-description-3').appendChild(createElement('h2', 'menu-descrip
 getById('menu-description-text-3').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'
 
 // Contact menu
-getById('contact-menu').appendChild(createElement('h2', 'contact-1', 'contact-1', 'contact-1'));
-getById('contact-menu').appendChild(createElement('h2', 'contact-2', 'contant-2', 'contact-2'));
-getById('contact-menu').appendChild(createElement('h2', 'contact-3', 'contact-3', 'contact-3'));
+getById('contact-content').appendChild(createElement('h2', 'contact-1', 'contact-1', 'contact-1'));
+getById('contact-content').appendChild(createElement('h2', 'contact-2', 'contact-2', 'contact-2'));
+getById('contact-content').appendChild(createElement('h2', 'contact-3', 'contact-3', 'contact-3'));

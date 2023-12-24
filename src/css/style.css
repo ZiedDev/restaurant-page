@@ -17,6 +17,12 @@
     --primary: rgb(251, 143, 80);
     --secondary: rgb(235, 160, 117);
     --accent: rgb(208, 87, 17);
+
+    --text-alt: rgb(241, 227, 218);
+    --background-alt: rgb(12, 6, 3);
+    --primary-alt: rgb(175, 66, 4);
+    --secondary-alt: rgb(138, 68, 28);
+    --accent-alt: rgb(238, 117, 47);
 }
 
 :root[data-theme="dark"] {
@@ -25,6 +31,12 @@
     --primary: rgb(175, 66, 4);
     --secondary: rgb(138, 68, 28);
     --accent: rgb(238, 117, 47);
+
+    --text-alt: rgb(37, 23, 14);
+    --background-alt: rgb(252, 246, 243);
+    --primary-alt: rgb(251, 143, 80);
+    --secondary-alt: rgb(235, 160, 117);
+    --accent-alt: rgb(208, 87, 17);
 }
 
 

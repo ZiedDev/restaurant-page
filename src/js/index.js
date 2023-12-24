@@ -14,16 +14,28 @@ function runSlideShow() {
 runSlideShow();
 
 navTitleButton.addEventListener('click', function () {
+    navTitleButton.classList.add('nav-button-active');
+    navMenuButton.classList.remove('nav-button-active');
+    navContactButton.classList.remove('nav-button-active');
+
     feedMeContent.classList.remove('hide');
     menuContent.classList.add('hide');
     contactContent.classList.add('hide');
 });
 navMenuButton.addEventListener('click', function () {
+    navTitleButton.classList.remove('nav-button-active');
+    navMenuButton.classList.add('nav-button-active');
+    navContactButton.classList.remove('nav-button-active');
+
     feedMeContent.classList.add('hide');
     menuContent.classList.remove('hide');
     contactContent.classList.add('hide');
 });
 navContactButton.addEventListener('click', function () {
+    navTitleButton.classList.remove('nav-button-active');
+    navMenuButton.classList.remove('nav-button-active');
+    navContactButton.classList.add('nav-button-active');
+
     feedMeContent.classList.add('hide');
     menuContent.classList.add('hide');
     contactContent.classList.remove('hide');
