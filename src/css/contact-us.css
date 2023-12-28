@@ -1,0 +1,52 @@
+.contact-us-container {
+    background-color: rgb(from var(--secondary) r g b / 37%);
+
+    overflow: hidden;
+    overflow-y: auto;
+
+    transition: width 200ms cubic-bezier(.19, -0.1, .18, 1.19), transform 200ms cubic-bezier(.19, -0.1, .18, 1.19);
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-radius: 1rem;
+
+    padding: 5rem 2rem;
+}
+
+.contact-us-container h2,
+.contact-us-container path {
+    color: var(--text-white);
+    letter-spacing: 1.5pt;
+    word-spacing: 1pt;
+}
+
+.contact-us-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+    z-index: 10;
+    pointer-events: none;
+}
+
+.contact-1,
+.contact-2,
+.contact-3 {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    gap: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .contact-us-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+}

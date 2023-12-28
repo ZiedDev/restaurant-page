@@ -155,6 +155,7 @@
 }
 
 .address h2 {
+    text-align: center;
     letter-spacing: 1.5pt;
     word-spacing: 2pt;
 }
@@ -229,5 +230,9 @@
 
         grid-template-columns: 1fr;
         grid-template-rows: 15rem repeat(5, 7rem);
+    }
+
+    .social-media {
+        gap: 0.5rem;
     }
 }

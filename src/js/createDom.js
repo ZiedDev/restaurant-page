@@ -1,9 +1,10 @@
 import { createElement, createInput, createImage, getById } from './templates.js';
-import { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg, arrow } from './media.js';
+import { sunSvg, moonSvg, background, steak, sushi, rice, xLogoSvg, instagramLogoSvg, emailSvg, arrow, phoneSvg, addressSvg } from './media.js';
 import '../css/style.css';
 import '../css/navBar.css';
 import '../css/feedMe.css';
 import '../css/menu.css';
+import '../css/contact-us.css';
 
 // Navigation Bar
 document.body.appendChild(createElement('nav', 'navBar', 'navBar'));
@@ -125,6 +126,17 @@ getById('menu-item-description-3').appendChild(createElement('h2', 'menu-descrip
 getById('menu-description-text-3').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos debitis quisquam tempore. Eligendi suscipit, labore perferendis tempore earum enim impedit reprehenderit dolores aliquid doloremque ipsam! Nesciunt repellat incidunt consequuntur est libero? Perferendis culpa deleniti qui tenetur reiciendis, ducimus cum magni neque nulla nobis, minus quo a vel modi similique excepturi!'
 
 // Contact menu
-getById('contact-content').appendChild(createElement('h2', 'contact-1', 'contact-1', 'contact-1'));
-getById('contact-content').appendChild(createElement('h2', 'contact-2', 'contact-2', 'contact-2'));
-getById('contact-content').appendChild(createElement('h2', 'contact-3', 'contact-3', 'contact-3'));
+getById('contact-content').appendChild(createElement('', 'contact-us-container', 'contact-us-container', ''));
+
+getById('contact-us-container').appendChild(createElement('', 'contact-1', 'contact-1', ''));
+getById('contact-us-container').appendChild(createElement('', 'contact-2', 'contact-2', ''));
+getById('contact-us-container').appendChild(createElement('', 'contact-3', 'contact-3', ''));
+
+getById('contact-1').innerHTML += emailSvg;
+getById('contact-1').appendChild(createElement('h2', 'contact-1-text', 'contact-1-text', 'feedMe@feedMe.com'));
+
+getById('contact-2').innerHTML += phoneSvg;
+getById('contact-2').appendChild(createElement('h2', 'contact-2-text', 'contact-2-text', '+69 254 1549 1249'));
+
+getById('contact-3').innerHTML += addressSvg;
+getById('contact-3').appendChild(createElement('h2', 'contact-3-text', 'contact-3-text', 'Location: 862 Forest Avenue, Elmsford, New York'));
